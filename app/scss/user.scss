@@ -1,0 +1,14 @@
+.user{
+
+  &__link{
+    color: $text--light;
+    text-decoration: none;
+    font-size: 'LatoLight', Arial, Helvetica, sans-serif;
+  }
+  &__login{
+    color: white;
+  }
+  &__register{
+    color: white;
+  }
+}

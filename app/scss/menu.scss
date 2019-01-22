@@ -1,0 +1,12 @@
+.menu{
+  list-style: none;
+}
+.menu__item{
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+  a{
+    color: $text--light;
+    text-decoration: none;
+  }
+}

@@ -10,10 +10,10 @@
 <body>
     <!-- Logo + Top Menu +  User-->
     <section class="top">
-        <div class="logo">
-            <img src="http://placehold.it/180x170" alt="222">
+        <div class="top__logo logo">
+            <img src="#" width="150" height="170" alt="ASK.IT">
         </div>
-        <ul class="menu">
+        <ul class="top__menu menu">
             <li class="menu__item"><a>Home</a></li>
             <li class="menu__item"><a href="#">How it Works</a></li>
             <li class="menu__item"><a href="#">Features</a></li>
@@ -21,7 +21,7 @@
             <li class="menu__item"><a href="#">Events</a></li>
             <li class="menu__item"><a href="#">About us</a></li>
         </ul>
-        <div class="user">
+        <div class="top__user user">
             <div class="user__login">
                 <a href="#" class="user__link">Log in</a>
             </div>
@@ -32,90 +32,106 @@
     </section>
     <!-- Title -->
     <section class="header">
-        <h2>Live Interaction From Audience</h2>
-        <p>Q&A, Polls and Slide-sharing for Events</p>
-        <a href="#">Create a event</a>
-        <div>
-            <a href="#">Join event</a>
-            <input type="text" name="typeCode" id="event-code" placeholder="type code">
+        <h2 class="header__title">Live Interaction From Audience</h2>
+        <p class="header__desc">Q&A, Polls and Slide-sharing for Events</p>
+        <div class="header__buttons">
+            <div class="header__btn">
+                <a href="#">Create a event</a>
+            </div>
+            <div class="header__btn">
+                <a href="#">Join event</a>
+                <input type="text" name="typeCode" id="event-code" placeholder="type code">
+            </div>
         </div>
     </section>
     <!-- How it Works -->
     <section class="instruction">
-        <h2>How it works</h2>
+        <h2 class="common__title">How it works</h2>
         <ul class="instruction__list">
             <li class="instruction__item">
-                <div class="instruction__img"></div>
-                <p class="instruction__desc">Create a FREE  account with us</p>
+                <div class="instruction__img"><img src="#" width="160" height="160" alt=""></div>
+                <p class="instruction__desc">Create a FREE <br>  account with us</p>
             </li>
             <li class="instruction__item">
-                <div class="instruction__img"></div>
-                <p class="instruction__desc">Create your own event or Q&A session</p>
+                <div class="instruction__img"><img src="#" width="160" height="160" alt=""></div>
+                <p class="instruction__desc">Create your own event <br> or Q&A session</p>
             </li>
             <li class="instruction__item">
-                <div class="instruction__img"></div>
-                <p class="instruction__desc">Share your meeting code  with the participants</p>
+                <div class="instruction__img"><img src="#" width="160" height="160" alt=""></div>
+                <p class="instruction__desc">Share your meeting code <br> with the participants</p>
             </li>
             <li class="instruction__item">
-                <div class="instruction__img"></div>
-                <p class="instruction__desc">Run your meeting successfully</p>
+                <div class="instruction__img"><img src="#" width="160" height="160" alt=""></div>
+                <p class="instruction__desc">Run your meeting <br> successfully</p>
             </li>
         </ul>  
     </section>
     <!-- Interaction -->
     <section class="interaction">
-        <h2>Interact with thousand of audience in no time</h2>
-        <b>Its easier than ever</b>
-        <p>it’s never been easier to connect with people who speak this language. They want others to build up their self-image and confidence, and digital connectivity creates ample opportunity to tell your audience why they’re awesome. Move beyond general flattery and focus on specifics. Ask yourself, “How can I make my audience feel good about themselves”</p>
-        <p>One option might be developing a blog series that focuses on industry wins, or spotlights companies that are doing something right. Or if you share an article with your network, you could point out a quote from the author that really resonates with you. Don’t just tell your audience you love them; tell them why.</p>
+        <h2 class="interaction__title">Interact with thousand of audience in no time</h2>
+        <b class="interaction__note">Its easier than ever</b>
+        <p class="interaction__text">it’s never been easier to connect with people who speak this language. They want others to build up their self-image and confidence, and digital connectivity creates ample opportunity to tell your audience why they’re awesome. Move beyond general flattery and focus on specifics. Ask yourself, “How can I make my audience feel good about themselves”</p>
+        <p class="interaction__text">One option might be developing a blog series that focuses on industry wins, or spotlights companies that are doing something right. Or if you share an article with your network, you could point out a quote from the author that really resonates with you. Don’t just tell your audience you love them; tell them why.</p>
         <ul class="interaction__actions">
             <li>
-                <img src="#" alt="ask">
+                <img src="#" width="103" height="103" alt="ask">
                 <a href="#">Ask a Question Right Now</a>        
             </li>
             <li>
-                <img src="#" alt="search">
+                <img src="#" width="103" height="103" alt="search">
                 <a href="#">Choose From Questions</a>    
             </li>
             <li>
-                <img src="#" alt="select">
+                <img src="#" width="103" height="103" alt="select">
                 <a href="#">Select From Top Questions</a>
             </li>
         </ul>
     </section>
     <!-- Features -->
     <section class="features">
-        <h2>Features</h2>
+        <h2 class="common__title">Features</h2>
         <ul class="features__list">
             <li>
-                <div class="features__icon"></div>
-                <p class="features__title">Ask a question</p>
+                <div class="features__icon">
+                    <img src="#" width="100" height="85" alt="">
+                </div>
+                <p>Ask a question</p>
             </li>
             <li>
-                <div class="features__icon"></div>
-                <p class="features__title">Raise a poll</p>
+                <div class="features__icon">
+                    <img src="#" width="100" height="85" alt="">
+                </div>
+                <p>Raise a poll</p>
             </li>
             <li>
-                <div class="features__icon"></div>
-                <p class="features__title">View statistics</p>
+                <div class="features__icon">
+                    <img src="#" width="100" height="85" alt="">
+                </div>
+                <p>View statistics</p>
             </li>
             <li>
-                <div class="features__icon"></div>
-                <p class="features__title">Vote a question</p>
+                <div class="features__icon">
+                    <img src="#" width="100" height="85" alt="">
+                </div>
+                <p>Vote a question</p>
             </li>
             <li>
-                <div class="features__icon"></div>
-                <p class="features__title">Create a survey</p>
+                <div class="features__icon">
+                    <img src="#" width="100" height="85" alt="">
+                </div>
+                <p>Create a survey</p>
             </li>
             <li>
-                <div class="features__icon"></div>
-                <p class="features__title">Privacy ensured</p>
+                <div class="features__icon">
+                    <img src="#" width="100" height="85" alt="">
+                </div>
+                <p>Privacy ensured</p>
             </li>
         </ul>
     </section>
     <!-- Partners -->
     <section class="partners">
-        <h2>Partners</h2>
+        <h2 class="common__title common__title--darki">Partners</h2>
         <div class="partners__slider">
             <div class="parnters__slide"><img src="#" alt="mccann"></div>
             <div class="parnters__slide"><img src="#" alt="unwomen"></div>
@@ -128,21 +144,21 @@
     </section>
     <!-- Events -->
     <section class="events">
-        <h2>Events</h2>
+        <h2 class="common__title">Events</h2>
         <ul class="events__list">
-            <li>
+            <li class="events__card">
                 <div class="events__title">External event</div>
                 <div class="events__icon"></div>
                 <p class="events__desc">Offers customizable on-line registration service for event organizers. Includes pricing, features, and types of accounts.</p>
                 <a href="#" class="events__button">Discover</a>
             </li>
-            <li>
+            <li class="events__card">
                 <div class="events__title">Interactive event</div>
                 <div class="events__icon"></div>
                 <p class="events__desc">Offers customizable on-line registration service for event organizers. Includes pricing, features, and types of accounts.</p>
                 <a href="#" class="events__button">Discover</a>
             </li>
-            <li>
+            <li class="events__card">
                 <div class="events__title">Internal event</div>
                 <div class="events__icon"></div>
                 <p class="events__desc">Offers customizable on-line registration service for event organizers. Includes pricing, features, and types of accounts.</p>
@@ -152,7 +168,7 @@
     </section>
     <!-- About -->
     <section class="about">
-        <h2>About us</h2>
+        <h2 class="common__title">About us</h2>
         <b>Who we are?</b>
         <span>What we can do for you</span>
         <p>it’s never been easier to connect with people who speak this language. They want others to build up their self-image and confidence, and digital connectivity creates ample opportunity to tell your One option might be developing a blog series that focuses on industry wins, or spotlights companies that are doing something right. Or if you share an article with your network.</p>

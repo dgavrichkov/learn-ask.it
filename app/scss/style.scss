@@ -1,1 +1,24 @@
 @import 'variables.scss';
+@import 'top.scss';
+@import 'menu.scss';
+@import 'user.scss';
+@import 'header.scss';
+@import 'instruction.scss';
+@import 'interaction';
+@import 'features';
+@import 'partners.scss';
+@import 'events.scss';
+@import 'about.scss';
+@import 'footer.scss';
+
+
+.common__title{
+  color: $accent;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+}
+.common__title--darki{
+  color: $text--light;
+}

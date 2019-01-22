@@ -27,3 +27,113 @@
   src: local("Lato Black"), local("Lato-Black"), url("../fonts/latoblack.woff2") format("woff2"), url("../fonts/latoblack.woff") format("woff"), url("../fonts/latoblack.ttf") format("truetype");
   font-weight: 900;
   font-style: normal; }
+
+.top {
+  background-color: #121111; }
+
+.menu {
+  list-style: none; }
+
+.menu__item {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: 'LatoLight', Arial, Helvetica, sans-serif; }
+  .menu__item a {
+    color: #f5f5f5;
+    text-decoration: none; }
+
+.user__link {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 'LatoLight', Arial, Helvetica, sans-serif; }
+
+.user__login {
+  color: white; }
+
+.user__register {
+  color: white; }
+
+.header {
+  background-color: #636a97;
+  color: #f5f5f5; }
+  .header__title {
+    font-family: 'LatoBlack', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    color: #f5f5f5; }
+  .header__desc {
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 18px; }
+  .header__buttons {
+    display: flex; }
+  .header__btn {
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px; }
+    .header__btn a {
+      color: inherit;
+      text-decoration: none; }
+
+.instruction {
+  background-color: white;
+  color: #5191a7; }
+  .instruction__desc {
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
+
+.interaction {
+  background-color: #5191a7;
+  color: #f5f5f5; }
+  .interaction__title {
+    font-family: 'LatoBold', Arial, Helvetica, sans-serif;
+    font-size: 30px; }
+  .interaction__note {
+    font-family: 'LatoMedium', Arial, Helvetica, sans-serif; }
+  .interaction__text {
+    font-family: 'LatoLight', Arial, Helvetica, sans-serif; }
+  .interaction__actions {
+    list-style: none; }
+    .interaction__actions li {
+      background-color: #f1b451; }
+      .interaction__actions li a {
+        font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #121111;
+        text-decoration: none; }
+
+.features {
+  background-color: white;
+  color: #5191a7; }
+
+.partners {
+  background-image: url("/img/partnersback.jpg");
+  background-position: center; }
+  .partners__slider {
+    display: flex; }
+
+.events {
+  background-color: #e8e8e8; }
+  .events__list {
+    list-style: none; }
+  .events__title {
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
+    .events__title span {
+      font-family: 'LatoBold', Arial, Helvetica, sans-serif; }
+    .events__title:nth-of-type(1) {
+      background: url("/img/pic1.png") center; }
+    .events__title:nth-of-type(2) {
+      background: url("/img/pic2.png") center; }
+
+.common__title {
+  color: #5191a7;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+  letter-spacing: 10px; }
+
+.common__title--darki {
+  color: #f5f5f5; }

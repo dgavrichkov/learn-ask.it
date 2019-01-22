@@ -1,0 +1,26 @@
+.interaction{
+  background-color: $accent;
+  color: $text--light;
+  &__title{
+    font-family: 'LatoBold', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+  }
+  &__note{
+    font-family: 'LatoMedium', Arial, Helvetica, sans-serif;
+  }
+  &__text{
+    font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+  }
+  &__actions{
+    list-style: none;
+    li{
+      background-color: $secondary;
+      a{
+        font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: $dark;
+        text-decoration: none;
+      }
+    }
+  }
+}

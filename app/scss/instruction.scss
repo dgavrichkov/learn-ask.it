@@ -1,0 +1,10 @@
+.instruction{
+  background-color: white;
+  color: $accent;
+
+  &__desc{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+  }
+}
