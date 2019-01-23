@@ -1,0 +1,39 @@
+.about{
+  color: $accent;
+
+  h4{
+    font-family: 'LatoBold', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    span{
+      font-weight: normal;
+      font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+  p{
+    font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+    color: $stdtext;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &__stats{
+    li{
+      font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+      span{
+        font-size: 20px;
+      }
+    }
+    li:nth-of-type(1){
+      color: $accent;
+    }
+    li:nth-of-type(2){
+      color: $err;
+    }
+    li:nth-of-type(3){
+      color: $warn;
+    }
+  }
+}

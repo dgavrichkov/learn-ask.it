@@ -123,10 +123,70 @@
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
     .events__title span {
       font-family: 'LatoBold', Arial, Helvetica, sans-serif; }
-    .events__title:nth-of-type(1) {
-      background: url("/img/pic1.png") center; }
-    .events__title:nth-of-type(2) {
-      background: url("/img/pic2.png") center; }
+  .events__desc {
+    font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    line-height: 12px; }
+  .events__button {
+    color: #f5f5f5;
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 14px; }
+  .events__card:nth-of-type(1) .events__title {
+    background: url("/img/pic1.png") center; }
+  .events__card:nth-of-type(1) .events__button {
+    background-color: #5191a7;
+    text-decoration: none; }
+  .events__card:nth-of-type(2) .events__title {
+    background: url("/img/pic2.png") center; }
+  .events__card:nth-of-type(2) .events__button {
+    background-color: #f26250; }
+  .events__card:nth-of-type(3) .events__title {
+    background: url("/img/pic3.png") center; }
+  .events__card:nth-of-type(3) .events__button {
+    background-color: #f0a765; }
+
+.about {
+  color: #5191a7; }
+  .about h4 {
+    font-family: 'LatoBold', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal; }
+    .about h4 span {
+      font-weight: normal;
+      font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 15px; }
+  .about p {
+    font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+    color: #2d2d2d;
+    font-size: 12px;
+    line-height: 16px; }
+  .about__stats li {
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
+    .about__stats li span {
+      font-size: 20px; }
+  .about__stats li:nth-of-type(1) {
+    color: #5191a7; }
+  .about__stats li:nth-of-type(2) {
+    color: #f26250; }
+  .about__stats li:nth-of-type(3) {
+    color: #f0a765; }
+
+.footer {
+  color: #f5f5f5;
+  background-color: #121111;
+  font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+  font-size: 12px; }
+  .footer a {
+    color: #f5f5f5;
+    text-decoration: none; }
+  .footer ul {
+    list-style: none; }
+  .footer h3 {
+    font-family: 'LatoBold', Arial, Helvetica, sans-serif;
+    font-size: 14px; }
 
 .common__title {
   color: #5191a7;
