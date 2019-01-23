@@ -1,5 +1,5 @@
 .user{
-
+  display: flex;
   &__link{
     color: $text--light;
     text-decoration: none;
@@ -12,3 +12,4 @@
     color: white;
   }
 }
+

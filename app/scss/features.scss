@@ -1,4 +1,8 @@
 .features{
   background-color: white;
   color: $accent;
+  &__list{
+    list-style: none;
+    display: flex;
+  }
 }

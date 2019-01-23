@@ -1,3 +1,41 @@
 .top{
   background-color: $dark;
 }
+
+@media (max-width: 750px){
+  .top{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .top__menu{
+    display: none;
+  }
+  .top__user{
+    display: none;
+  }
+  .top__logo{
+    height: 130px;
+    img{
+      height: 130px;
+      width: 112px;
+    }
+  }
+  .top__burger{
+    position: absolute;
+    right: 10px;
+    top: 20%;
+  }
+}
+
+@media(min-width: 751px) and (max-width: 1540px){
+  .top{
+    display: flex;
+    justify-content: center;
+    min-height: 130px;
+    &__logo{
+      display: none;
+    }
+  }
+}

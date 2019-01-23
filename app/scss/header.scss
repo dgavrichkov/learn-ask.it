@@ -1,11 +1,16 @@
 .header{
   background-color: $header-back;
   color: $text--light;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   &__title{
     font-family: 'LatoBlack', Arial, Helvetica, sans-serif;
     font-size: 30px;
     line-height: 30px;
     color: $text--light;
+    margin: 0;
   }
   &__desc{
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
@@ -23,5 +28,16 @@
       color: inherit;
       text-decoration: none;
     }
+  }
+}
+
+@media (max-width: 750px){
+  .header{
+    min-height: 454px;
+  }
+}
+@media(min-width: 751px) and (max-width: 1540px){
+  .header{
+    min-height: 810px;
   }
 }

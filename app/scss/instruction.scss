@@ -7,4 +7,8 @@
     line-height: 15px;
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
   }
+  &__list{
+    list-style: none;
+    display: flex;
+  }
 }

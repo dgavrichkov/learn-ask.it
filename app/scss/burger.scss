@@ -1,0 +1,11 @@
+.burger{
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+@media (min-width: 751px){
+  .burger{
+    display: none;
+  }
+}

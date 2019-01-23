@@ -1,7 +1,7 @@
 @import 'variables.scss';
-@import 'top.scss';
 @import 'menu.scss';
 @import 'user.scss';
+@import 'top.scss';
 @import 'header.scss';
 @import 'instruction.scss';
 @import 'interaction';
@@ -10,15 +10,24 @@
 @import 'events.scss';
 @import 'about.scss';
 @import 'footer.scss';
+@import 'container.scss';
+@import 'burger.scss';
 
-
+body{
+  padding: 0;
+  margin: 0;
+}
 .common__title{
   color: $accent;
   font-size: 30px;
   line-height: 30px;
   font-family: 'LatoLight', Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
+  text-align: center;
 }
 .common__title--darki{
   color: $text--light;
+}
+@media (max-width: 750px){
+
 }
