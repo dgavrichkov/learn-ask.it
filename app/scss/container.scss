@@ -10,3 +10,10 @@
 @media(min-width: 751px) and (max-width: 1540px){
   
 }
+
+
+.grid-container{
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+}

@@ -130,7 +130,8 @@
   .instruction__desc {
     font-size: 13px;
     line-height: 15px;
-    font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+    text-align: center; }
   .instruction__list {
     list-style: none;
     display: flex;
@@ -146,7 +147,20 @@
   .instruction__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; } }
+    grid-template-rows: 1fr 1fr;
+    padding: 0 100px; }
+  .instruction__item {
+    justify-self: center;
+    min-width: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .instruction__img {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #5191a7;
+    overflow: hidden; } }
 
 @media (min-width: 751px) and (max-width: 1540px) {
   .instruction__list {
@@ -267,6 +281,11 @@
 @media (max-width: 750px) {
   .container {
     max-width: 750px; } }
+
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr); }
 
 .burger {
   width: 58px;
