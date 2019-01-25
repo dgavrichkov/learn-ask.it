@@ -10,5 +10,34 @@
   &__list{
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  &__item{
+    .instruction__img{
+      img{
+        max-height: 86px;
+      }
+      max-width: 162px;
+      padding: 20px;
+    }
+  }
+}
+
+@media(max-width: 750px){
+  .instruction{
+    &__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+}
+@media(min-width: 751px) and (max-width: 1540px){
+  .instruction{
+    &__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 }

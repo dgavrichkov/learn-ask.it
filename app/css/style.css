@@ -133,7 +133,25 @@
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
   .instruction__list {
     list-style: none;
-    display: flex; }
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .instruction__item .instruction__img {
+    max-width: 162px;
+    padding: 20px; }
+    .instruction__item .instruction__img img {
+      max-height: 86px; }
+
+@media (max-width: 750px) {
+  .instruction__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
+
+@media (min-width: 751px) and (max-width: 1540px) {
+  .instruction__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 .interaction {
   background-color: #5191a7;
@@ -242,6 +260,9 @@
   .footer h3 {
     font-family: 'LatoBold', Arial, Helvetica, sans-serif;
     font-size: 14px; }
+
+.container {
+  box-sizing: border-box; }
 
 @media (max-width: 750px) {
   .container {
