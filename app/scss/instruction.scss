@@ -1,7 +1,9 @@
 .instruction{
   background-color: white;
   color: $accent;
-
+  &__title{
+    grid-column: 1 / 13;
+  }
   &__desc{
     font-size: 13px;
     line-height: 15px;
@@ -15,11 +17,14 @@
     padding: 0;
   }
   &__item{
+    justify-self: center;
     .instruction__img{
       img{
         max-height: 86px;
       }
       max-width: 162px;
+      display: flex;
+      justify-content: center;
       padding: 20px;
     }
   }
@@ -27,7 +32,11 @@
 
 @media(max-width: 750px){
   .instruction{
+    &__title{
+      grid-column: 1 / 7;
+    }
     &__list{
+      grid-column: 2 / 5;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -38,6 +47,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      &:nth-of-type(1), 
+      &:nth-of-type(3){
+        justify-self: end;
+      }
+      &:nth-of-type(2), 
+      &:nth-of-type(4){
+        justify-self: start;
+      }
     }
     &__img{
       box-sizing: border-box;
@@ -51,8 +68,18 @@
 @media(min-width: 751px) and (max-width: 1540px){
   .instruction{
     &__list{
+      grid-column: 2 / 12;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
+@media(min-width: 1541px){
+  .instruction{
+    &__list{
+      grid-column: 2 / 12;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;  
     }
   }
 }

@@ -28,6 +28,21 @@
   font-weight: 900;
   font-style: normal; }
 
+.container {
+  box-sizing: border-box; }
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 750px; } }
+
+.grid__container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr); }
+  @media (max-width: 750px) {
+    .grid__container {
+      grid-template-columns: repeat(6, 1fr); } }
+
 .menu {
   list-style: none;
   margin: 0;
@@ -127,6 +142,8 @@
 .instruction {
   background-color: white;
   color: #5191a7; }
+  .instruction__title {
+    grid-column: 1 / 13; }
   .instruction__desc {
     font-size: 13px;
     line-height: 15px;
@@ -137,24 +154,34 @@
     display: flex;
     margin: 0;
     padding: 0; }
-  .instruction__item .instruction__img {
-    max-width: 162px;
-    padding: 20px; }
-    .instruction__item .instruction__img img {
-      max-height: 86px; }
+  .instruction__item {
+    justify-self: center; }
+    .instruction__item .instruction__img {
+      max-width: 162px;
+      display: flex;
+      justify-content: center;
+      padding: 20px; }
+      .instruction__item .instruction__img img {
+        max-height: 86px; }
 
 @media (max-width: 750px) {
+  .instruction__title {
+    grid-column: 1 / 7; }
   .instruction__list {
+    grid-column: 2 / 5;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0 100px; }
+    grid-template-rows: 1fr 1fr; }
   .instruction__item {
     justify-self: center;
     min-width: 234px;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .instruction__item:nth-of-type(1), .instruction__item:nth-of-type(3) {
+      justify-self: end; }
+    .instruction__item:nth-of-type(2), .instruction__item:nth-of-type(4) {
+      justify-self: start; }
   .instruction__img {
     box-sizing: border-box;
     width: 100px;
@@ -164,6 +191,13 @@
 
 @media (min-width: 751px) and (max-width: 1540px) {
   .instruction__list {
+    grid-column: 2 / 12;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+@media (min-width: 1541px) {
+  .instruction__list {
+    grid-column: 2 / 12;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
@@ -282,10 +316,13 @@
   .container {
     max-width: 750px; } }
 
-.grid-container {
+.grid__container {
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr); }
+  @media (max-width: 750px) {
+    .grid__container {
+      grid-template-columns: repeat(6, 1fr); } }
 
 .burger {
   width: 58px;

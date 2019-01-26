@@ -12,8 +12,12 @@
 }
 
 
-.grid-container{
+.grid__container{
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
+
+  @media(max-width: 750px){
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
