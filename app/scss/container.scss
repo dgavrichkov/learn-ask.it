@@ -1,18 +1,6 @@
+
+
 .container{
-  box-sizing: border-box;
-}
-@media(max-width: 750px){
-  .container{
-    max-width: 750px;
-  }
-}
-
-@media(min-width: 751px) and (max-width: 1540px){
-  
-}
-
-
-.grid__container{
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
