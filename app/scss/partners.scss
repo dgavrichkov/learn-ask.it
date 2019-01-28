@@ -1,7 +1,82 @@
 .partners{
-  background-image: url('/img/partnersback.jpg');
-  background-position: center;
+  background: url('/img/partnersback.jpg') no-repeat;
+  position: relative;
+  &::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h2{
+    z-index: 2;
+  }
   &__slider{
     display: flex;
+    z-index: 2;
+  }
+}
+
+@media(max-width: 750px){
+  .partners{
+    h2{
+      grid-column: 1 / 7;
+      text-align: center;
+    }
+    &__slider{
+      overflow: hidden;
+      grid-column: 2 / 6;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 85px 85px 85px;
+      grid-gap: 10px;
+      grid-template-areas:
+        "th th th"
+        "th th th"
+        " . one  .";
+    }
+    &__slide{
+      justify-self: center;
+      align-self: center;
+      max-width: 115px;
+      &:last-child{
+        grid-area: one;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media(min-width: 751px) and (max-width: 1540px){
+  .partners{
+    h2{
+      grid-column: 2 / 12;
+      text-align: center;
+    }
+    &__slider{
+      grid-column: 3 / 11;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 85px 85px 85px;
+      grid-gap: 10px;
+      grid-template-areas:
+        "th th th"
+        "th th th"
+        " . one  .";
+    }
+    &__slide{
+      justify-self: center;
+      align-self: center;
+      max-width: 124px;
+      &:last-child{
+        grid-area: one;
+      }
+      img{
+        width: 100%;
+      }
+    }
   }
 }
