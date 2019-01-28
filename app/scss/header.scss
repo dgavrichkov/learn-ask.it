@@ -33,7 +33,57 @@
 
 @media (max-width: 750px){
   .header{
-    min-height: 454px;
+    &__title{
+      margin-top: 150px;
+      grid-column: 1 / 7;
+      justify-self: center;
+    }
+    &__desc{
+      margin-top: 38px;
+      grid-column: 1 / 7;
+      justify-self: center;
+    }
+    &__buttons{
+      margin-top: 63px;
+      margin-bottom: 67px;
+      grid-column: 1 / 7;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      .header__btn{
+        font-size: 26px;
+        border: 2px solid $text--light;
+        display: flex;
+        box-sizing: border-box;
+      }
+      .header__btn:first-child{
+        grid-column: 3 / 6;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        height: 56px;
+        
+       
+      }
+      .header__btn:last-child{
+        grid-column: 7 / 12;
+        width: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px;
+        input{
+          height: 100%;
+          border: none;
+          color: $accent;
+          text-align: center;
+          font-size: 21px;
+          max-width: 145px;
+          &::placeholder{
+            color: $accent;
+          }
+        }
+      }
+    }
   }
 }
 @media(min-width: 751px) and (max-width: 1540px){

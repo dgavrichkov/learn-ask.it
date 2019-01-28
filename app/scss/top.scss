@@ -5,7 +5,6 @@
 @media (max-width: 750px){
   .top{
     display: flex;
-    position: relative;
     justify-content: center;
     padding: 10px 0;
   }
@@ -23,9 +22,20 @@
     }
   }
   .top__burger{
-    position: absolute;
-    right: 10px;
-    top: 20%;
+    
+  }
+}
+@media(max-width: 750px){
+  .top{
+    &__logo{
+      grid-column: 3 / 5;
+      justify-self: center;
+    }
+    &__burger{
+      grid-column: 6 / 7;
+      justify-self: center;
+      align-self: center;
+    }
   }
 }
 
