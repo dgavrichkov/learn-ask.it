@@ -31,7 +31,7 @@
       order: 2;
       grid-column: 1 / 7;
       font-size: 20px;
-      text-align: center;
+      justify-self: center;
     }
     &__note{
       order: 3;
@@ -51,6 +51,27 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 10px;
       padding: 0;
+    }
+  }
+}
+@media(min-width: 751px) and (max-width: 1540px){
+  .interaction{
+    &__title{
+      grid-column: 1 / 9;
+      justify-self: center;
+    }
+    &__note{
+      grid-column: 1 / 9;
+      justify-self: center;
+    }
+    &__text{
+      grid-column: 1 / 9;
+      justify-self: center;
+      text-align: center;
+    }
+    &__actions{
+      grid-column: 10 / 13;
+      justify-self: center;
     }
   }
 }

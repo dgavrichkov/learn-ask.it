@@ -178,18 +178,18 @@
       .header__buttons .header__btn:last-child input {
         height: 100%;
         border: none;
-        color: #5191a7;
+        color: #037693;
         text-align: center;
         font-size: 21px;
         max-width: 145px; }
         .header__buttons .header__btn:last-child input::-webkit-input-placeholder {
-          color: #5191a7; }
+          color: #037693; }
         .header__buttons .header__btn:last-child input:-ms-input-placeholder {
-          color: #5191a7; }
+          color: #037693; }
         .header__buttons .header__btn:last-child input::-ms-input-placeholder {
-          color: #5191a7; }
+          color: #037693; }
         .header__buttons .header__btn:last-child input::placeholder {
-          color: #5191a7; } }
+          color: #037693; } }
     @media (max-width: 750px) and (max-width: 590px) {
       .header__buttons .header__btn:last-child {
         grid-column: 1 / 2;
@@ -202,7 +202,7 @@
 
 .instruction {
   background-color: white;
-  color: #5191a7; }
+  color: #037693; }
   .instruction__title {
     grid-column: 1 / 13; }
   .instruction__desc {
@@ -247,7 +247,7 @@
     box-sizing: border-box;
     width: 100px;
     height: 100px;
-    border: 1px solid #5191a7;
+    border: 1px solid #037693;
     overflow: hidden; } }
 
 @media (min-width: 751px) and (max-width: 1540px) {
@@ -263,7 +263,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 .interaction {
-  background-color: #5191a7;
+  background-color: #037693;
   color: #f5f5f5; }
   .interaction__title {
     font-family: 'LatoBold', Arial, Helvetica, sans-serif;
@@ -287,7 +287,7 @@
     order: 2;
     grid-column: 1 / 7;
     font-size: 20px;
-    text-align: center; }
+    justify-self: center; }
   .interaction__note {
     order: 3;
     grid-column: 1 / 7;
@@ -305,9 +305,24 @@
     grid-gap: 10px;
     padding: 0; } }
 
+@media (min-width: 751px) and (max-width: 1540px) {
+  .interaction__title {
+    grid-column: 1 / 9;
+    justify-self: center; }
+  .interaction__note {
+    grid-column: 1 / 9;
+    justify-self: center; }
+  .interaction__text {
+    grid-column: 1 / 9;
+    justify-self: center;
+    text-align: center; }
+  .interaction__actions {
+    grid-column: 10 / 13;
+    justify-self: center; } }
+
 .features {
   background-color: white;
-  color: #5191a7; }
+  color: #037693; }
   .features__list {
     list-style: none;
     display: flex; }
@@ -526,7 +541,7 @@
     text-align: center; } }
 
 .about {
-  color: #5191a7; }
+  color: #037693; }
   .about h4 {
     font-family: 'LatoBold', Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -547,7 +562,7 @@
     .about__stats li span {
       font-size: 20px; }
   .about__stats li:nth-of-type(1) {
-    color: #5191a7; }
+    color: #037693; }
   .about__stats li:nth-of-type(2) {
     color: #f26250; }
   .about__stats li:nth-of-type(3) {
@@ -715,7 +730,7 @@ body {
   display: none; }
 
 .common__title {
-  color: #5191a7;
+  color: #037693;
   font-size: 30px;
   line-height: 30px;
   font-family: 'LatoLight', Arial, Helvetica, sans-serif;
