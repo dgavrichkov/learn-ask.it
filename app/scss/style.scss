@@ -18,6 +18,9 @@ body{
   padding: 0;
   margin: 0;
 }
+.common--hidden{
+  display: none;
+}
 .common__title{
   color: $accent;
   font-size: 30px;

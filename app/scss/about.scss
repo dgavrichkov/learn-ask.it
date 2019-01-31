@@ -6,12 +6,12 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
-    span{
-      font-weight: normal;
-      font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
-      font-size: 15px;
-      line-height: 15px;
-    }
+  }
+  b{
+    font-weight: normal;
+    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
   }
   p{
     font-family: 'LatoLight', Arial, Helvetica, sans-serif;
@@ -51,11 +51,19 @@
       justify-self: center;
       margin: 0;
     }
+    b{
+      order: 3;
+      grid-column: 1 / 7;
+      justify-self: center;
+      font-size: 22px;
+    }
     p{
       order: 4;
       grid-column: 2 / 6;
       justify-self: center;
       text-align: center;
+      font-size: 18px;
+      line-height: 22px;
     }
     &__stats{
       order: 2;

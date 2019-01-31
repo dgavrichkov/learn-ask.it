@@ -49,23 +49,32 @@
       grid-column: 1 / 7;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
+      @media(max-width: 590px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+      }
       .header__btn{
         font-size: 26px;
         border: 2px solid $text--light;
         display: flex;
         box-sizing: border-box;
+        height: 56px;
       }
       .header__btn:first-child{
-        grid-column: 3 / 6;
+        grid-column: 1 / 6;
+        justify-self: end;
         justify-content: center;
         align-items: center;
         width: 210px;
-        height: 56px;
         
-       
+        @media(max-width: 590px){
+          grid-column: 1 / 2;
+          justify-self: center;
+        }
       }
       .header__btn:last-child{
         grid-column: 7 / 12;
+        justify-self: start;
         width: 290px;
         display: flex;
         align-items: center;
@@ -81,6 +90,11 @@
           &::placeholder{
             color: $accent;
           }
+        }
+        @media(max-width: 590px){
+          grid-column: 1 / 2;
+          justify-self: center;
+          margin-top: 20px;
         }
       }
     }
