@@ -71,9 +71,12 @@
           grid-column: 2 / 8;
           position: relative;
           input{
+            box-sizing: border-box;
+            border: none;
             width: 100%;
             font-size: 30px;
             text-align: center;
+            padding: 0;
             &::placeholder{
               font-size: 30px;
               font-family: 'LatoLight', Arial, Helvetica, sans-serif;
@@ -83,7 +86,7 @@
             background: none;
             border: none;
             position: absolute;
-            top: 4px;
+            top: 2px;
             right: 0;
             padding: 0;
           }
