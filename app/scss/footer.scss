@@ -14,6 +14,12 @@
     font-family: 'LatoBold', Arial, Helvetica, sans-serif;
     font-size: 14px;
   }
+  svg{
+    path{
+      stroke: $text--light;
+      fill: $text--light;
+    }
+  }
 }
 
 @media(max-width: 750px){

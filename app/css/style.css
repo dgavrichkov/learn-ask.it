@@ -579,6 +579,9 @@
   .footer h3 {
     font-family: 'LatoBold', Arial, Helvetica, sans-serif;
     font-size: 14px; }
+  .footer svg path {
+    stroke: #f5f5f5;
+    fill: #f5f5f5; }
 
 @media (max-width: 750px) {
   .footer__menu {
