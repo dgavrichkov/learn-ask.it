@@ -1,6 +1,7 @@
 .features{
   background-color: white;
   color: $accent;
+  font-family: 'LatoBold', Arial, Helvetica, sans-serif;
   &__list{
     list-style: none;
     display: flex;
@@ -52,7 +53,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       li{
-        font-size: 4.1vw;
+        font-size: 3.8vw;
       }
     }
     &__icon{
