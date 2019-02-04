@@ -79,15 +79,12 @@
   .top__user {
     display: none; }
   .top__logo {
+    grid-column: 3 / 5;
+    justify-self: center;
     height: 130px; }
     .top__logo img {
       height: 130px;
-      width: 112px; } }
-
-@media (max-width: 750px) {
-  .top__logo {
-    grid-column: 3 / 5;
-    justify-self: center; }
+      width: 112px; }
   .top__burger {
     grid-column: 6 / 7;
     justify-self: center;
@@ -103,10 +100,7 @@
 
 .header {
   background-color: #636a97;
-  background-image: url("/img/iPhone6.png"), url("/img/header.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
-  background-position: 90% 130%;
+  box-sizing: border-box;
   color: #f5f5f5; }
   .header__title {
     font-family: 'LatoBlack', Arial, Helvetica, sans-serif;
@@ -122,6 +116,7 @@
     z-index: 1; }
   .header__buttons {
     display: flex;
+    justify-content: space-between;
     z-index: 1; }
   .header__btn {
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
@@ -150,79 +145,115 @@
       text-decoration: none; }
 
 @media (max-width: 750px) {
-  .header__title {
-    margin-top: 150px;
-    grid-column: 1 / 7;
-    justify-self: center; }
-  .header__desc {
-    margin-top: 38px;
-    grid-column: 1 / 7;
-    justify-self: center; }
-  .header__buttons {
-    margin-top: 63px;
-    margin-bottom: 67px;
-    grid-column: 1 / 7;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr); } }
-  @media (max-width: 750px) and (max-width: 590px) {
+  .header {
+    background-image: url("/img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 453px;
+    max-height: 475px;
+    padding-bottom: 20px; }
+    .header__title {
+      margin-top: 150px;
+      grid-column: 1 / 7;
+      justify-self: center; }
+    .header__desc {
+      margin-top: 38px;
+      grid-column: 1 / 7;
+      justify-self: center; }
     .header__buttons {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr; } }
+      margin-top: 63px;
+      margin-bottom: 67px;
+      grid-column: 1 / 7;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); } }
+    @media (max-width: 750px) and (max-width: 590px) {
+      .header__buttons {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; } }
 
 @media (max-width: 750px) {
-    .header__buttons .header__btn {
-      font-size: 26px;
-      height: 56px; }
-    .header__buttons .header__btn:first-child {
+      .header__buttons .header__btn {
+        font-size: 26px;
+        height: 56px; }
+      .header__buttons .header__btn:first-child {
+        grid-column: 1 / 6;
+        justify-self: end;
+        justify-content: center;
+        align-items: center;
+        width: 210px; } }
+      @media (max-width: 750px) and (max-width: 590px) {
+        .header__buttons .header__btn:first-child {
+          grid-column: 1 / 2;
+          justify-self: center; } }
+
+@media (max-width: 750px) {
+      .header__buttons .header__btn:last-child {
+        grid-column: 7 / 12;
+        justify-self: start;
+        width: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10px; }
+        .header__buttons .header__btn:last-child input {
+          font-size: 21px;
+          max-width: 145px; }
+          .header__buttons .header__btn:last-child input::-webkit-input-placeholder {
+            color: #037693; }
+          .header__buttons .header__btn:last-child input:-ms-input-placeholder {
+            color: #037693; }
+          .header__buttons .header__btn:last-child input::-ms-input-placeholder {
+            color: #037693; }
+          .header__buttons .header__btn:last-child input::placeholder {
+            color: #037693; } }
+      @media (max-width: 750px) and (max-width: 590px) {
+        .header__buttons .header__btn:last-child {
+          grid-column: 1 / 2;
+          justify-self: center;
+          margin-top: 20px; } }
+
+@media (min-width: 751px) and (max-width: 1539px) {
+  .header {
+    align-content: start;
+    background-image: url("/img/header.jpg");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 453px; }
+    .header__title {
+      grid-column: 1 / 13;
+      justify-self: center;
+      margin-top: 141px; }
+    .header__desc {
+      grid-column: 1 / 13;
+      justify-self: center;
+      margin-top: 40px; }
+    .header__buttons {
+      grid-column: 2 / 12;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      margin-top: 50px; }
+    .header .header__btn:first-child {
       grid-column: 1 / 6;
       justify-self: end;
       justify-content: center;
-      align-items: center;
-      width: 210px; } }
-    @media (max-width: 750px) and (max-width: 590px) {
-      .header__buttons .header__btn:first-child {
-        grid-column: 1 / 2;
-        justify-self: center; } }
-
-@media (max-width: 750px) {
-    .header__buttons .header__btn:last-child {
+      align-items: center; }
+    .header .header__btn:last-child {
       grid-column: 7 / 12;
       justify-self: start;
-      width: 290px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding-left: 10px; }
-      .header__buttons .header__btn:last-child input {
-        font-size: 21px;
-        max-width: 145px; }
-        .header__buttons .header__btn:last-child input::-webkit-input-placeholder {
-          color: #037693; }
-        .header__buttons .header__btn:last-child input:-ms-input-placeholder {
-          color: #037693; }
-        .header__buttons .header__btn:last-child input::-ms-input-placeholder {
-          color: #037693; }
-        .header__buttons .header__btn:last-child input::placeholder {
-          color: #037693; } }
-    @media (max-width: 750px) and (max-width: 590px) {
-      .header__buttons .header__btn:last-child {
-        grid-column: 1 / 2;
-        justify-self: center;
-        margin-top: 20px; } }
+      padding-left: 10px; } }
 
-@media (min-width: 751px) and (max-width: 1540px) {
+@media (min-width: 1540px) {
   .header {
-    min-height: 810px;
-    align-content: start; }
-    .header__title {
-      grid-column: 1 / 9;
-      justify-self: center; }
-    .header__desc {
-      grid-column: 1 / 9;
-      justify-self: center; }
-    .header__buttons {
-      grid-column: 1 / 9;
-      justify-self: center; } }
+    background-image: url("/img/iPhone6.png"), url("/img/header.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-size: 365px auto, cover;
+    background-position: 91% 340px, left top;
+    min-height: 810px; } }
 
 .instruction {
   background-color: white;
@@ -423,7 +454,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 85px 85px 85px;
     grid-gap: 10px;
-    grid-template-areas: "th th th" "th th th" " . one  ."; }
+    grid-template-areas: "th th th" "th th th" " . one  ."; }
   .partners__slide {
     justify-self: center;
     align-self: center;
@@ -443,7 +474,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 85px 85px 85px;
     grid-gap: 10px;
-    grid-template-areas: "th th th" "th th th" " . one  ."; }
+    grid-template-areas: "th th th" "th th th" " . one  ."; }
   .partners__slide {
     justify-self: center;
     align-self: center;
@@ -457,7 +488,8 @@
   background-color: #e8e8e8; }
   .events__list {
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
   .events__title {
     color: #f5f5f5;
     text-transform: uppercase;

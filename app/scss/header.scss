@@ -1,11 +1,6 @@
 .header{
   background-color: $header-back;
-  background-image: 
-    url('/img/iPhone6.png'), 
-    url('/img/header.jpg');
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
-  background-position: 90% 130%;
+  box-sizing: border-box;
   color: $text--light;
 
   &__title{
@@ -24,6 +19,7 @@
   }
   &__buttons{
     display: flex;
+    justify-content: space-between;
     z-index: 1;
   }
   &__btn{
@@ -34,7 +30,6 @@
     font-size: 22px;
     z-index: 1;
     border: 2px solid $text--light; 
-    
     height: 74px;
     &:first-child{
       width: 270px;
@@ -61,6 +56,12 @@
 
 @media (max-width: 750px){
   .header{
+    background-image: url('/img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 453px;
+    max-height: 475px;
+    padding-bottom: 20px;
     &__title{
       margin-top: 150px;
       grid-column: 1 / 7;
@@ -121,21 +122,56 @@
     }
   }
 }
-@media(min-width: 751px) and (max-width: 1540px){
+@media(min-width: 751px) and (max-width: 1539px){
   .header{
-    min-height: 810px;
     align-content: start;
+    background-image: url('/img/header.jpg');
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 453px;
     &__title{
-      grid-column: 1 / 9;
+      grid-column: 1 / 13;
       justify-self: center;
+      margin-top: 141px;
     }
     &__desc{
-      grid-column: 1 / 9;
+      grid-column: 1 / 13;
       justify-self: center;
+      margin-top: 40px;
     }
     &__buttons{
-      grid-column: 1 / 9;
+      grid-column: 2 / 12;
       justify-self: center;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      margin-top: 50px;
     }
+    .header__btn:first-child{
+      grid-column: 1 / 6;
+      justify-self: end;
+      justify-content: center;
+      align-items: center;
+    }
+    .header__btn:last-child{
+      grid-column: 7 / 12;
+      justify-self: start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media(min-width: 1540px){
+  .header{
+    background-image: 
+      url('/img/iPhone6.png'), 
+      url('/img/header.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 365px auto, cover;
+    background-position: 91% 340px, left top;
+    min-height: 810px;
   }
 }
