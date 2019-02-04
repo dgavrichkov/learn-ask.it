@@ -1,5 +1,9 @@
 .user{
   display: flex;
+  svg{
+    fill: $text--light;
+    stroke: $text--light;
+  }
   &__link{
     color: $text--light;
     text-decoration: none;

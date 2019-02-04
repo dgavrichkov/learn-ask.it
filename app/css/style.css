@@ -57,6 +57,9 @@
 
 .user {
   display: flex; }
+  .user svg {
+    fill: #f5f5f5;
+    stroke: #f5f5f5; }
   .user__link {
     color: #f5f5f5;
     text-decoration: none;
@@ -96,7 +99,17 @@
     justify-content: center;
     min-height: 130px; }
     .top__logo {
-      display: none; } }
+      display: none; }
+    .top__menu {
+      grid-column: 4 / 10;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around; }
+    .top__user {
+      grid-column: 10 / 12;
+      height: 100%;
+      align-items: center;
+      justify-content: space-around; } }
 
 .header {
   background-color: #636a97;
