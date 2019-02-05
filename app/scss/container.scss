@@ -10,4 +10,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 0;
   }
+  @media(min-width: 751px) and (max-width: 1540px){
+    grid-column-gap: 0;
+  }
 }
