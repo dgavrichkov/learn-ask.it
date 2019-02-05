@@ -1,11 +1,15 @@
 .about{
   color: $accent;
-
+  box-sizing: border-box;
+  h2{
+    margin: 0;
+  }
   h4{
     font-family: 'LatoBold', Arial, Helvetica, sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
+    margin: 0;
   }
   b{
     font-weight: normal;
@@ -20,6 +24,9 @@
     line-height: 16px;
   }
   &__stats{
+    padding: 0;
+    margin: 0;
+    list-style: none;
     li{
       font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
       span{
@@ -37,7 +44,104 @@
     }
   }
 }
+// для больших экранов
+@media(min-width: 1541px){
+  .about{
+    grid-template-rows: 2fr 3fr;
+    h2{
+      grid-column: 2 / 12;
+      justify-self: center;
+      align-self: center;
+      font-size: 55px;
+    }
+    &__content{
+      grid-column: 3 / 8;
+      align-self: start;
+      h4{
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 20px;
+      }
+      b{
+        font-size: 20px;
+      }
+      p{
+        margin-top: 45px;
+      }
+    }
+    &__stats{
+      height: 320px;
+      align-content: start;
+      grid-column: 8 / 12;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+      li{
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
 
+        }
+        span{
+          font-size: 50px;
+        }
+        p{
+          text-align: center;
+          font-size: 25px;
+        }
+      } 
+    }
+  }
+}
+
+@media(min-width: 751px) and (max-width: 1540px){
+  .about{
+    h2{
+      grid-column: 2 / 12;
+      justify-self: center;
+      order: 1;
+    }
+    &__content{
+      grid-column: 2 / 12;
+      justify-self: center;
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+    &__stats{
+      order: 2;
+      grid-column: 2 / 12;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+      li{
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+
+        }
+        span{
+          font-size: 50px;
+        }
+        p{
+          text-align: center;
+          font-size: 25px;
+        }
+      } 
+    }
+  }
+}
 @media(max-width: 750px){
   .about{
     h2{
@@ -45,26 +149,24 @@
       justify-self: center;
       order: 1;
     }
-    h4{
-      order: 3;
+    &__content{
       grid-column: 1 / 7;
       justify-self: center;
-      margin: 0;
-    }
-    b{
       order: 3;
-      grid-column: 1 / 7;
-      justify-self: center;
-      font-size: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      b{
+        font-size: 22px;
+      }
+      p{
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        padding: 0 30px;
+      }
     }
-    p{
-      order: 4;
-      grid-column: 2 / 6;
-      justify-self: center;
-      text-align: center;
-      font-size: 18px;
-      line-height: 22px;
-    }
+
     &__stats{
       order: 2;
       padding: 0;
