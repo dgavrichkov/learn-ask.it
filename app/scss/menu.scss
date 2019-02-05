@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  display: flex;
 }
 .menu__item{
   font-size: 14px;
@@ -15,7 +16,7 @@
 }
 @media(min-width: 751px) and (max-width: 1540px){
   .menu{
-    display: flex;
+    
     justify-content: space-between;
     &__item{
     
