@@ -1,0 +1,32 @@
+.social{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  font-family: 'LatoLight', Arial, Helvetica, sans-serif;
+  h3{
+    grid-column: 2 / 8;
+    justify-self: center;
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+  }
+  ul{
+    grid-column: 3 / 7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  } 
+}
+@media(max-width: 750px){
+
+}
+@media(min-width: 751px) and (max-width: 1540px){
+
+}
+@media(min-width: 1541px){
+  .social{
+    h3{
+      font-size: 20px;
+    }
+  }
+}
