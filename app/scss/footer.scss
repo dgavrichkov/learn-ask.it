@@ -46,6 +46,10 @@
     &__menu{
       grid-row: 3 / 6;
       align-self: start;
+      font-size: 15px;
+      h3{
+        font-size: 20px;
+      }
     }
     &__menu--links{
       grid-column: 6 / 7;

@@ -4,13 +4,13 @@
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 40px;
+  
 
   @media(max-width: 750px){
     grid-template-columns: repeat(6, 1fr);
-    grid-column-gap: 0;
+    
   }
   @media(min-width: 751px) and (max-width: 1540px){
-    grid-column-gap: 0;
+    
   }
 }

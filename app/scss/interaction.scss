@@ -12,16 +12,7 @@
     font-family: 'LatoLight', Arial, Helvetica, sans-serif;
   }
   &__actions{
-    list-style: none;
-    li{
-      background-color: $secondary;
-      a{
-        font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        color: $dark;
-        text-decoration: none;
-      }
-    }
+    
   }
 }
 
@@ -47,9 +38,12 @@
     &__actions{
       order: 1;
       grid-column: 2 / 6;
+      justify-self: center;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 10px;
+      grid-gap: 40px;
+      // display: flex;
+      // justify-content: space-between;
       padding: 0;
     }
   }
