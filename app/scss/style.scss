@@ -27,6 +27,9 @@ body{
 .common__title{
   color: $accent;
   font-size: 30px;
+  @media(min-width: 1541px){
+    font-size: 54px;
+  }
   line-height: 30px;
   font-family: 'LatoLight', Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
