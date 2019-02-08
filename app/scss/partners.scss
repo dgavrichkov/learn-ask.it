@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
   }
-  h2{
+  &__title{
     z-index: 2;
   }
   &__slider{
@@ -21,7 +21,7 @@
 
 @media(max-width: 750px){
   .partners{
-    h2{
+    &__title{
       grid-column: 1 / 7;
       text-align: center;
     }
@@ -52,7 +52,7 @@
 }
 @media(min-width: 751px) and (max-width: 1540px){
   .partners{
-    h2{
+    &__title{
       grid-column: 2 / 12;
       text-align: center;
     }
@@ -77,6 +77,19 @@
       img{
         width: 100%;
       }
+    }
+  }
+}
+@media(min-width: 1541px){
+  .partners{
+    &__title{
+      grid-column: 1 / 13;
+      justify-self: center;
+    }
+    &__slider{
+      grid-column: 1 / 13;
+      display: flex;
+      justify-content: space-around;
     }
   }
 }
