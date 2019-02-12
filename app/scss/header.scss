@@ -18,8 +18,6 @@
     z-index: 1;
   }
   &__buttons{
-    display: flex;
-    justify-content: space-between;
     z-index: 1;
   }
   &__btn{
@@ -170,8 +168,45 @@
       url('/img/iPhone6.png'), 
       url('/img/header.jpg');
     background-repeat: no-repeat, no-repeat;
-    background-size: 365px auto, cover;
-    background-position: 91% 340px, left top;
+    background-size: 490px auto, cover;
+    background-position: 92% 180px, left top;
     min-height: 810px;
+    align-content: start;
+    &__title{
+      grid-column: 2 / 9;
+      justify-self: center;
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: 20%;
+    }
+    &__desc{
+      grid-column: 2 / 9;
+      justify-self: center;
+      font-size: 38px;
+      line-height: 38px;
+      margin: 0;
+      margin-top: 5%; 
+    }
+    &__buttons{
+      margin-top: 5%;
+      grid-column: 2 / 9;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .header__btn:first-child{
+      grid-column: 1 / 6;
+      justify-self: end;
+      justify-content: center;
+      align-items: center;
+    }
+    .header__btn:last-child{
+      grid-column: 7 / 12;
+      justify-self: start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 10px;
+    }
   }
 }

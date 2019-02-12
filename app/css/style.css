@@ -151,8 +151,6 @@
     line-height: 18px;
     z-index: 1; }
   .header__buttons {
-    display: flex;
-    justify-content: space-between;
     z-index: 1; }
   .header__btn {
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
@@ -286,9 +284,41 @@
   .header {
     background-image: url("/img/iPhone6.png"), url("/img/header.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-size: 365px auto, cover;
-    background-position: 91% 340px, left top;
-    min-height: 810px; } }
+    background-size: 490px auto, cover;
+    background-position: 92% 180px, left top;
+    min-height: 810px;
+    align-content: start; }
+    .header__title {
+      grid-column: 2 / 9;
+      justify-self: center;
+      font-size: 60px;
+      line-height: 60px;
+      margin-top: 20%; }
+    .header__desc {
+      grid-column: 2 / 9;
+      justify-self: center;
+      font-size: 38px;
+      line-height: 38px;
+      margin: 0;
+      margin-top: 5%; }
+    .header__buttons {
+      margin-top: 5%;
+      grid-column: 2 / 9;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); }
+    .header .header__btn:first-child {
+      grid-column: 1 / 6;
+      justify-self: end;
+      justify-content: center;
+      align-items: center; }
+    .header .header__btn:last-child {
+      grid-column: 7 / 12;
+      justify-self: start;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 10px; } }
 
 .instruction {
   background-color: white;
