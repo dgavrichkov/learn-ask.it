@@ -1163,10 +1163,9 @@
   .footer__logo {
     grid-column: 1 / 7;
     justify-self: center;
-    max-width: 118px; }
+    max-width: 240px; }
     .footer__logo img {
-      width: 100%;
-      height: auto; }
+      width: 100%; }
   .footer__desc {
     grid-column: 1 / 7;
     justify-self: center;
@@ -1217,6 +1216,7 @@
     grid-column: 1 / 7;
     justify-self: center;
     margin-top: 150px;
+    margin-bottom: 35px;
     font-size: 27px; } }
 
 .social {
