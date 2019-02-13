@@ -1137,25 +1137,41 @@
 @media (min-width: 751px) and (max-width: 1540px) {
   .footer__logo {
     grid-column: 1 / 13;
-    justify-self: center; }
+    justify-self: center;
+    margin-top: 150px; }
   .footer__desc {
-    grid-column: 1 / 13;
+    grid-column: 2 / 12;
     justify-self: center;
     text-align: center;
-    padding: 0 5%;
-    font-size: 30px; }
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    font-size: 44px; }
+  .footer__menu {
+    font-size: 20px; }
+    .footer__menu h3 {
+      font-size: 24px;
+      margin-bottom: 15px; }
   .footer__menu--links {
     grid-column: 2 / 6;
-    justify-self: center; }
+    justify-self: start; }
   .footer__menu--account {
-    grid-column: 7 / 13;
-    justify-self: center; }
+    grid-column: 9 / 13;
+    justify-self: start; }
   .footer__feedback {
-    grid-column: 2 / 12; }
+    grid-column: 2 / 12;
+    margin-top: 75px; }
+  .footer__subscribe {
+    margin-top: 140px; }
   .footer__copy {
     grid-column: 2 / 12;
     justify-self: center;
-    font-size: 30px; } }
+    font-size: 30px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
 
 @media (max-width: 750px) {
   .footer__menu {
@@ -1200,6 +1216,16 @@
     display: flex;
     justify-content: space-between; }
 
+@media (min-width: 751px) and (max-width: 1540px) {
+  .social ul {
+    grid-column: 2 / 8;
+    margin-top: 115px; }
+    .social ul li {
+      width: 95px; }
+  .social svg {
+    width: 100%;
+    height: auto; } }
+
 @media (min-width: 1541px) {
   .social h3 {
     font-size: 20px; } }
@@ -1213,7 +1239,8 @@
     font-size: 31px; }
   .subscribe form div {
     grid-column: 2 / 8;
-    position: relative; }
+    position: relative;
+    margin-top: 100px; }
     .subscribe form div input {
       box-sizing: border-box;
       border: none;

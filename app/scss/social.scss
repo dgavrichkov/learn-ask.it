@@ -21,7 +21,19 @@
 
 }
 @media(min-width: 751px) and (max-width: 1540px){
-
+  .social{
+    ul{
+      grid-column: 2 / 8;
+      margin-top: 115px;
+      li{
+        width: 95px;
+      }
+    }
+    svg{
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 @media(min-width: 1541px){
   .social{
