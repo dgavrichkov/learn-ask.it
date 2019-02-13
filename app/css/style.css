@@ -722,11 +722,15 @@
 
 .events {
   background-color: #e8e8e8; }
+  .events h2 {
+    margin: 0; }
   .events__list {
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    box-sizing: border-box; }
   .events__title {
+    margin: 0;
     color: #f5f5f5;
     text-transform: uppercase;
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif; }
@@ -833,7 +837,6 @@
     grid-column: 1 / 13;
     text-align: center; }
   .events__list {
-    box-sizing: border-box;
     grid-column: 1 / 13;
     justify-self: center;
     display: flex;
@@ -874,6 +877,55 @@
         background-color: #f0a765; }
       .events__card:nth-of-type(3) .events__button {
         background-color: #f0a765; } }
+
+@media (min-width: 1541px) {
+  .events {
+    padding-bottom: 65px; }
+    .events h2 {
+      grid-column: 1 / 13;
+      justify-self: center;
+      margin-top: 80px;
+      margin-bottom: 60px; }
+    .events__list {
+      grid-column: 1 / 13;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .events__card {
+      outline: 1px solid #4ca59a; }
+      .events__card .events__title {
+        font-size: 2.2vw;
+        line-height: 2.6vw;
+        text-align: center;
+        padding: 0 20%; }
+        .events__card .events__title span {
+          font-weight: bold; }
+      .events__card .events__desc {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 6%; }
+      .events__card:nth-of-type(1) {
+        width: 30%;
+        min-height: 510px; }
+        .events__card:nth-of-type(1) .events__title {
+          background-color: #4ca59a; }
+        .events__card:nth-of-type(1) .events__button {
+          background-color: #4ca59a; }
+      .events__card:nth-of-type(2) {
+        width: 34%;
+        min-height: 576px; }
+        .events__card:nth-of-type(2) .events__title {
+          background-color: #f26250; }
+        .events__card:nth-of-type(2) .events__button {
+          background-color: #f26250; }
+      .events__card:nth-of-type(3) {
+        width: 30%;
+        min-height: 510px; }
+        .events__card:nth-of-type(3) .events__title {
+          background-color: #f0a765; }
+        .events__card:nth-of-type(3) .events__button {
+          background-color: #f0a765; } }
 
 .about {
   color: #037693;

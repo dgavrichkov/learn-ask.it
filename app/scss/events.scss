@@ -1,16 +1,19 @@
 .events{
   background-color: $graybg;
-
+  h2{
+    margin: 0;
+  }
   &__list{
     list-style: none;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
   }
   &__card{
 
   }
   &__title{
-    
+    margin: 0;
     color: $text--light;
     text-transform: uppercase;
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
@@ -146,14 +149,12 @@
       text-align: center;
     }
     &__list{
-      box-sizing: border-box;
-      //  padding: 0 1.5%;
+      
       grid-column: 1 / 13;
       justify-self: center;
       display: flex;
       justify-content: space-around;
       align-items: center;
-      // justify-content: space-between;
     }
     &__card{
       outline: 1px solid $prim;
@@ -176,9 +177,73 @@
         text-align: center;
         padding: 0 4%;
       }
-      // &:not(:last-child){
-      //   margin-right: 1.5%;
-      // }
+      &:nth-of-type(1){
+        width: 30%;
+        min-height: 510px;
+        .events__title{
+          background-color: $prim;
+        }
+        .events__button{
+          background-color: $prim;
+        }
+      }
+      &:nth-of-type(2){
+        width: 34%;
+        min-height: 576px;
+        .events__title{
+          background-color: $err;
+        }
+        .events__button{
+          background-color: $err;
+        }
+      }
+      &:nth-of-type(3){
+        width: 30%;
+        min-height: 510px;
+        .events__title{
+          background-color: $warn;
+        }
+        .events__button{
+          background-color: $warn;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1541px){
+  .events{
+    padding-bottom: 65px;
+    h2{
+      grid-column: 1 / 13;
+      justify-self: center;
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+    &__list{
+      grid-column: 1 / 13;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__card{
+      outline: 1px solid $prim;
+      .events__title{
+        // font-size: 70px;
+        font-size: 2.2vw;
+        line-height: 2.6vw;
+        text-align: center;
+        padding: 0 20%;
+        span{
+          font-weight: bold;
+        }
+      }
+      .events__desc{
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;
+        padding: 0 6%;
+      }
       &:nth-of-type(1){
         width: 30%;
         min-height: 510px;
