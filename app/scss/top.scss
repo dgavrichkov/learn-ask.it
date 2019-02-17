@@ -15,12 +15,13 @@
     display: none;
   }
   .top__logo{
+    box-sizing: border-box;
     grid-column: 3 / 5;
     justify-self: center;
-    height: 130px;
+    height: 170px;
+    padding: 20px 0;
     img{
-      height: 130px;
-      width: 112px;
+      height: 100%;
     }
   }
   .top__burger{
