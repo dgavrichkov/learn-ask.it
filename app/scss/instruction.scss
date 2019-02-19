@@ -3,6 +3,7 @@
   color: $accent;
   &__title{
     grid-column: 1 / 13;
+    margin: 0;
   }
   &__desc{
     font-size: 13px;
@@ -12,7 +13,7 @@
   }
   &__list{
     list-style: none;
-    display: flex;
+    display: grid;
     margin: 0;
     padding: 0;
   }
@@ -30,16 +31,27 @@
   }
 }
 
+
 @media(max-width: 750px){
   .instruction{
+    padding-top: 40px;
+    padding-bottom: 40px;
     &__title{
       grid-column: 1 / 7;
+      margin-bottom: 40px;
     }
     &__list{
       grid-column: 2 / 6;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+      @media(max-width: 590px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+        grid-row-gap: 10px;
+      }
     }
     &__item{
       justify-self: center;
@@ -47,6 +59,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media(max-width: 590px){
+        justify-self: center;
+      }
       &:nth-of-type(1), 
       &:nth-of-type(3){
         justify-self: end;
@@ -55,6 +70,7 @@
       &:nth-of-type(4){
         justify-self: start;
       }
+      
     }
     &__img{
       box-sizing: border-box;
@@ -67,6 +83,10 @@
 }
 @media(min-width: 751px) and (max-width: 1540px){
   .instruction{
+    padding: 40px 0;
+    &__title{
+      margin-bottom: 40px;
+    }
     &__list{
       grid-column: 2 / 12;
       display: grid;
@@ -76,7 +96,9 @@
 }
 @media(min-width: 1541px){
   .instruction{
+    padding: 50px 0;
     &__list{
+      margin-top: 50px;
       grid-column: 2 / 12;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;  
