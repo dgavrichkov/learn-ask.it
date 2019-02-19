@@ -4,6 +4,7 @@
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(12, 1fr);
+  box-sizing: border-box;
   
 
   @media(max-width: 750px){
