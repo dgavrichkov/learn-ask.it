@@ -33,6 +33,9 @@ body{
   @media(min-width: 751px){
     font-size: 44px;
   }
+  @media(max-width: 750px){
+    font-size: 36px;
+  }
   line-height: 30px;
   font-family: 'LatoLight', Arial, Helvetica, sans-serif;
   letter-spacing: 10px;

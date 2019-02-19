@@ -12,6 +12,7 @@
   }
   &__title{
     z-index: 2;
+    margin: 0;
   }
   &__slider{
     display: flex;
@@ -21,17 +22,21 @@
 
 @media(max-width: 750px){
   .partners{
+    padding: 40px 0;
     &__title{
       grid-column: 1 / 7;
       text-align: center;
     }
     &__slider{
+      margin-top: 60px;
       overflow: hidden;
       grid-column: 2 / 6;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 85px 85px 85px;
-      grid-gap: 10px;
+      grid-column-gap: 5%;
+      grid-row-gap: 10px;
+      // grid-gap: 10px;
       grid-template-areas:
         "th th th"
         "th th th"
@@ -52,16 +57,19 @@
 }
 @media(min-width: 751px) and (max-width: 1540px){
   .partners{
+    padding: 50px 0;
     &__title{
       grid-column: 2 / 12;
       text-align: center;
     }
     &__slider{
+      margin-top: 70px;
       grid-column: 3 / 11;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 85px 85px 85px;
-      grid-gap: 10px;
+      grid-column-gap: 8%;
+      grid-row-gap: 10px;
       grid-template-areas:
         "th th th"
         "th th th"
@@ -92,22 +100,15 @@
       align-self: center;
     }
     &__slider{
-      grid-column: 1 / 13;
+      grid-column: 2 / 12;
       grid-row: 2 / 3;
       align-self: center;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+    }
+    &__slide{
+      display: flex;
+      align-items: center;
     }
   }
-}
-
-.Rectangle_5 {
-  background-color: rgb(50, 49, 49);
-  opacity: 0.8;
-  position: absolute;
-  left: -8px;
-  top: 4216px;
-  width: 2412px;
-  height: 456px;
-  z-index: 120;
 }
