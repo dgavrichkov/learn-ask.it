@@ -18,7 +18,14 @@
   } 
 }
 @media(max-width: 750px){
-
+  .social{
+    h3{
+      margin-bottom: 30px;
+    }
+    .social__list{
+      margin-bottom: 20px;
+    }
+  }
 }
 @media(min-width: 751px) and (max-width: 1540px){
   .social{
@@ -39,6 +46,10 @@
   .social{
     h3{
       font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .social__list{
+      margin-bottom: 30px;
     }
   }
 }
