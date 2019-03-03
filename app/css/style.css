@@ -55,6 +55,12 @@
   .menu__item:not(:last-child) {
     margin-right: 10px; }
 
+@media (max-width: 750px) {
+  .menu {
+    display: none; }
+  .menu--open {
+    display: flex; } }
+
 @media (min-width: 751px) and (max-width: 1540px) {
   .menu {
     justify-content: space-between; }
@@ -89,8 +95,6 @@
     display: flex;
     justify-content: center;
     padding: 10px 0; }
-  .top__menu {
-    display: none; }
   .top__user {
     display: none; }
   .top__logo {
