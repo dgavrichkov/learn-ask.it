@@ -725,7 +725,7 @@
       grid-template-rows: 85px 85px 85px;
       grid-column-gap: 5%;
       grid-row-gap: 10px;
-      grid-template-areas: "th th th" "th th th" " . one  ."; }
+      grid-template-areas: "th th th" "th th th" " . one  ."; }
     .partners__slide {
       justify-self: center;
       align-self: center;
@@ -749,7 +749,7 @@
       grid-template-rows: 85px 85px 85px;
       grid-column-gap: 8%;
       grid-row-gap: 10px;
-      grid-template-areas: "th th th" "th th th" " . one  ."; }
+      grid-template-areas: "th th th" "th th th" " . one  ."; }
     .partners__slide {
       justify-self: center;
       align-self: center;
@@ -1400,10 +1400,24 @@
       grid-template-columns: repeat(6, 1fr); } }
 
 .burger {
+  box-sizing: border-box;
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: #fff; }
+  border: 2px solid #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .burger svg {
+    width: 53%;
+    stroke: #f5f5f5;
+    fill: #f5f5f5; }
+  .burger:hover {
+    border-color: #037693;
+    cursor: pointer; }
+    .burger:hover svg {
+      stroke: #037693;
+      fill: #037693; }
 
 @media (min-width: 751px) {
   .burger {

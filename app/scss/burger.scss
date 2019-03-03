@@ -1,8 +1,27 @@
 .burger{
+  box-sizing: border-box;
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background-color: #fff;
+  border: 2px solid $text--light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //заглушка
+  // background-color: #fff;
+  svg{
+    width: 53%;
+    stroke: $text--light;
+    fill: $text--light;
+  }
+  &:hover{
+    border-color: $accent;
+    cursor: pointer;
+    svg{
+      stroke: $accent;
+      fill: $accent;
+    }
+  }
 }
 @media (min-width: 751px){
   .burger{
