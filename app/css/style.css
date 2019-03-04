@@ -432,13 +432,19 @@
       width: 100px;
       height: 100px;
       border: 1px solid #037693;
-      overflow: hidden; } }
+      overflow: hidden;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .instruction__img img {
+        height: 56px; } }
 
 @media (min-width: 751px) and (max-width: 1540px) {
   .instruction {
     padding: 40px 0; }
     .instruction__title {
-      margin-bottom: 40px; }
+      margin-bottom: 50px; }
     .instruction__list {
       grid-column: 2 / 12;
       display: grid;
