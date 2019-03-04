@@ -10,6 +10,7 @@
     color: $text--light;
     margin: 0;
     z-index: 1;
+    text-shadow: 0 3px 2px black;
   }
   &__desc{
     font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
@@ -29,6 +30,9 @@
     z-index: 1;
     border: 2px solid $text--light; 
     height: 74px;
+    &:hover{
+      box-shadow: 0 0 0 2px $accent;
+    }
     &:first-child{
       width: 270px;
       justify-content: center;
@@ -64,11 +68,14 @@
       margin-top: 150px;
       grid-column: 1 / 7;
       justify-self: center;
+      font-size: 36px;
+      
     }
     &__desc{
       margin-top: 38px;
       grid-column: 1 / 7;
       justify-self: center;
+      font-size: 22px;
     }
     &__buttons{
       margin-top: 63px;
@@ -169,7 +176,7 @@
       url('/img/header.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 490px auto, cover;
-    background-position: 92% 180px, left top;
+    background-position: 96% 180px, left top;
     min-height: 810px;
     align-content: start;
     &__title{
@@ -177,7 +184,7 @@
       justify-self: center;
       font-size: 60px;
       line-height: 60px;
-      margin-top: 20%;
+      margin-top: 30%;
     }
     &__desc{
       grid-column: 2 / 9;
@@ -188,7 +195,7 @@
       margin-top: 5%; 
     }
     &__buttons{
-      margin-top: 5%;
+      margin-top: 15%;
       grid-column: 2 / 9;
       justify-self: center;
       display: grid;
