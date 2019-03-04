@@ -2,7 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 100%;
+  // height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -23,7 +23,23 @@
     display: none;
   }
   .menu--open{
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(1, 1, 1, 0.7);
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    // padding-top: 20px;
+    // padding-bottom: 10px;
+    .menu__item{
+      // margin-bottom: 10px;
+    }
   }
 }
 @media(min-width: 751px) and (max-width: 1540px){
