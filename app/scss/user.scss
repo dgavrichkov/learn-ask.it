@@ -1,16 +1,26 @@
 .user{
   display: flex;
+  justify-content: center;
   svg{
     fill: $text--light;
     stroke: $text--light;
   }
   &__link{
+    display: block;
     color: $text--light;
     text-decoration: none;
     font-size: 'LatoLight', Arial, Helvetica, sans-serif;
+    &:hover{
+      color: $accent;
+      svg{
+        fill: $accent;
+        stroke: $accent;
+      }
+    }
   }
   &__login{
     color: white;
+    margin-right: 15%;
   }
   &__register{
     color: white;

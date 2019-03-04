@@ -16,11 +16,12 @@
     fill: $text--light;
   }
   &:hover{
-    border-color: $accent;
+    // border-color: $accent;
     cursor: pointer;
+    box-shadow: 0 0 0 2px $text--light; 
     svg{
-      stroke: $accent;
-      fill: $accent;
+      // stroke: $accent;
+      // fill: $accent;
     }
   }
 }
