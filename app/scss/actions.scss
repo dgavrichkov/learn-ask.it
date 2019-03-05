@@ -20,6 +20,10 @@
       color: $dark;
       text-decoration: none;
       z-index: 2;
+      &:hover{
+        font-weight: bold;
+        color: $text--light;
+      }
     }
   }
   &__item::before{
@@ -36,17 +40,17 @@
   .actions{
     &__item{
       box-sizing: border-box;
-      height: 108px;
-      width: 108px;
+      height: 128px;
+      width: 128px;
       padding-top: 16px;
       img{
         width: 30%;
         height: auto;
       }
       a{
-        margin-top: 3px;
+        margin-top: 6px;
         text-align: center;
-        font-size: 10px;
+        font-size: 12px;
       }
       &::before{
         // width: 71%;
@@ -77,9 +81,10 @@
         height: auto;
       }
       a{
-        margin-top: 8px;
+        margin-top: 12px;
         text-align: center;
-        font-size: 18px;
+        // font-size: 18px;
+        font-size: 1.2vw;
         max-width: 143px;
       }
       &::before{
@@ -93,23 +98,27 @@
 
 @media(min-width: 1541px){
   .actions{ 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    padding-left: 40px;
     &__item{
       height: 360px;
       width: 360px;
       padding-top: 50px;
       margin-bottom: 20px;
       img{
+        margin-top: 20px;
         width: 30%;
         height: auto;
       }
       a{
-        margin-top: 8px;
+        margin-top: 10px;
         text-align: center;
         font-size: 18px;
+        
       }
       &::before{
         // width: 210px;
@@ -118,7 +127,7 @@
       }
       &:nth-of-type(2){
         position: absolute;
-        left: 40%;
+        left: 200px;
       }
     }
   }
