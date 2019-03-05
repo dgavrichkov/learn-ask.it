@@ -95,7 +95,7 @@
 @media(min-width: 1541px){
   .interaction{
     // min-height: 872px;
-    max-height: 990px;
+    // max-height: 990px;
     grid-template-rows: 1fr 1fr 135px minmax(300px, 335px) 63px;
     &__title{
       grid-column: 3 / 6;

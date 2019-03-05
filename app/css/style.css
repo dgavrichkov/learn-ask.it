@@ -535,7 +535,6 @@
 
 @media (min-width: 1541px) {
   .interaction {
-    max-height: 990px;
     grid-template-rows: 1fr 1fr 135px minmax(300px, 335px) 63px; }
     .interaction__title {
       grid-column: 3 / 6;
@@ -633,12 +632,12 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    padding-left: 40px; }
+    padding-left: 40px;
+    margin: 0; }
     .actions__item {
       height: 360px;
       width: 360px;
-      padding-top: 50px;
-      margin-bottom: 20px; }
+      padding-top: 50px; }
       .actions__item img {
         margin-top: 20px;
         width: 30%;
@@ -647,6 +646,8 @@
         margin-top: 10px;
         text-align: center;
         font-size: 18px; }
+      .actions__item:first-child {
+        margin-bottom: 20px; }
       .actions__item:nth-of-type(2) {
         position: absolute;
         left: 200px; } }
@@ -813,7 +814,7 @@
       grid-template-rows: 85px 85px 85px;
       grid-column-gap: 5%;
       grid-row-gap: 10px;
-      grid-template-areas: "th th th" "th th th" " . one  ."; }
+      grid-template-areas: "th th th" "th th th" " . one  ."; }
     .partners__slide {
       justify-self: center;
       align-self: center;
@@ -837,7 +838,7 @@
       grid-template-rows: 85px 85px 85px;
       grid-column-gap: 8%;
       grid-row-gap: 10px;
-      grid-template-areas: "th th th" "th th th" " . one  ."; }
+      grid-template-areas: "th th th" "th th th" " . one  ."; }
     .partners__slide {
       justify-self: center;
       align-self: center;
