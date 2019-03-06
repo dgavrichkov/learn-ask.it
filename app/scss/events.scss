@@ -10,13 +10,13 @@
     box-sizing: border-box;
   }
   &__card{
-
+    
   }
   &__title{
     margin: 0;
     color: $text--light;
     text-transform: uppercase;
-    font-family: 'LatoRegular', Arial, Helvetica, sans-serif;
+    font-family: 'LatoLight', Arial, Helvetica, sans-serif;
     h3{
       font-weight: normal;
       margin: 0;
@@ -39,6 +39,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    text-decoration: none;
+    &:hover,
+    &:active{
+      box-shadow: 0 0 0 1px $text--light;
+      font-weight: bold;
+    }
   }
 }
 
@@ -53,19 +60,28 @@
       grid-column: 1 / 7;
     }
     &__card{
+      box-sizing: border-box;
+      padding: 32px 0;
       min-height: 418px;
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 10px;
+      
       .events__title{
         grid-column: 2 / 12;
         text-align: center;
+        font-size: 43px;
         z-index: 1;
+        span{
+          font-family: 'LatoBold', Arial, Helvetica, sans-serif;
+          font-weight: bold;
+        }
       }
       .events__icon{  
         grid-column: 2 / 4;
         z-index: 1;
         max-width: 78px;
+        margin-top: 20px;
         background-size: 100%;
       }
       .events__desc{
@@ -73,6 +89,7 @@
         grid-column: 4 / 12;
         z-index: 1;
         margin: 0;
+        margin-top: 20px;
         font-size: 28px;
         line-height: 32px;
         color: $text--light;
@@ -80,12 +97,13 @@
       .events__button{
         grid-column: 2 / 12;
         justify-self: center;
+        align-self: center;
         z-index: 1;
         font-size: 28px;
         text-decoration: none;  
         background-color: $text--light;
         width: 165px;
-        border-radius: 25%;
+        border-radius: 30px;
         height: 44px;
       }
       position: relative;
@@ -103,7 +121,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         &::before{
-          background-color: rgba(242, 98, 80, 0.712);
+          background-color: rgba(242, 98, 80, 0.9);
         }
         .events__icon{
           background-image: url('/img/interactivity.png');
@@ -118,7 +136,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         &::before{
-          background-color: rgba(240, 167, 101, 0.712);
+          background-color: rgba(240, 167, 101, 0.9);
         }
         .events__icon{
           background-image: url('/img/hard-disk.png');
@@ -133,7 +151,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         &::before{
-          background-color: rgba(76, 165, 154, 0.712);
+          background-color: rgba(76, 165, 154, 0.9);
         }
         .events__icon{
           background-image: url('/img/usb-connection.png');
@@ -143,6 +161,9 @@
           color: $prim;
         }
       }
+    }
+    &__card:not(:last-child){
+      margin-bottom: 5px;
     }
   }
 }
@@ -163,6 +184,11 @@
     }
     &__card{
       outline: 1px solid $prim;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 30px;
       .events__title{
         font-size: 2.2vw;
         line-height: 2.6vw;
@@ -171,9 +197,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        h3{
+          margin: 0;
+          padding: 0;
+          position: relative;
+        }
         span{
           font-weight: bold;
-          z-index: 2;
         }
         &::before{
           content: '';
@@ -182,7 +212,6 @@
           left: 0;
           width: 100%;
           height: 100%;
-          z-index: 0;
         }
       }
       .events__desc{
@@ -191,15 +220,30 @@
         text-align: center;
         padding: 0 4%;
       }
+      .events__icon{
+        width: 55px;
+        height: 70px;
+        background-size: 100%;
+      }
+      .events__button{
+        height: 50px;
+        width: 60%;
+        font-size: 22px;
+      }
 
       &:nth-of-type(1){
         width: 30%;
         min-height: 510px;
         .events__title{
           background-image: url('/img/pic1.png');
+          height: 220px;
           &::before{
             background-color: rgba(242, 98, 80, 0.712);
           }
+        }
+        .events__icon{
+          background-image: url('/img/interactivity.png');
+          background-repeat: no-repeat;
         }
         .events__button{
           background-color: $prim;
@@ -209,12 +253,18 @@
         width: 34%;
         min-height: 576px;
         .events__title{
-          min-height: 30%;
+          height: 240px;
           background-color: $err;
           background-image: url('/img/pic2.png');
           &::before{
             background-color: rgba(240, 167, 101, 0.712);
           }
+        }
+        .events__icon{
+          width: 70px;
+          height: 100px;
+          background-image: url('/img/hard-disk.png');
+          background-repeat: no-repeat;
         }
         .events__button{
           background-color: $err;
@@ -226,9 +276,14 @@
         .events__title{
           background-color: $warn;
           background-image: url('/img/pic3.png');
+          height: 220px;
           &::before{
             background-color: rgba(76, 165, 154, 0.712);
           }
+        }
+        .events__icon{
+          background-image: url('/img/usb-connection.png');
+          background-repeat: no-repeat;
         }
         .events__button{
           background-color: $warn;

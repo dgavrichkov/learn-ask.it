@@ -107,8 +107,14 @@
       justify-content: space-between;
     }
     &__slide{
+      box-sizing: border-box;
       display: flex;
       align-items: center;
+      max-width: 200px;
+      justify-content: center;
+      img{
+        width: 75%;
+      }
     }
   }
 }
