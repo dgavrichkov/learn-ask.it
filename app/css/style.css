@@ -1082,7 +1082,7 @@
       .events__card .events__icon {
         width: 55px;
         height: 70px;
-        background-size: 100%; }
+        background-size: contain; }
       .events__card .events__button {
         height: 50px;
         width: 60%;
