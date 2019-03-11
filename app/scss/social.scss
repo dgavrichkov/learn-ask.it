@@ -15,30 +15,59 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+  }
+  .social__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid $text--light;
+    svg{
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .social__button:hover{
+    box-shadow: 0 0 0 2px #fff;
+  }
+  .social__button:active{
+    border-color: $accent;
+    svg{
+      path{
+        fill: $accent;
+        stroke: $accent;
+      }
+    }
   } 
 }
 @media(max-width: 750px){
   .social{
     h3{
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      margin-top: 45px;
     }
     .social__list{
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
+    .social__button{
+      width: 50px;
+      height: 50px;
+    }
+    
   }
 }
 @media(min-width: 751px) and (max-width: 1540px){
   .social{
     ul{
       grid-column: 2 / 8;
-      margin-top: 115px;
+      margin-top: 45px;
       li{
         width: 95px;
       }
     }
-    svg{
-      width: 100%;
-      height: auto;
+    .social__button{
+      width: 60px;
+      height: 60px;
     }
   }
 }
@@ -50,6 +79,11 @@
     }
     .social__list{
       margin-bottom: 30px;
+      grid-column: 2 / 8;
+    }
+    .social__button{
+      width: 50px;
+      height: 50px;
     }
   }
 }
