@@ -47,6 +47,7 @@ body {
 .common__title {
   color: #037693;
   font-size: 30px;
+  justify-self: center;
   line-height: 30px;
   font-family: 'LatoLight', Arial, Helvetica, sans-serif;
   letter-spacing: 10px;
@@ -61,12 +62,23 @@ body {
   @media (max-width: 750px) {
     .common__title {
       font-size: 36px; } }
-  .common__title::before {
-    content: '';
-    position: absolute; }
+
+.common__title::before {
+  content: '';
+  position: absolute;
+  background-image: url("/img/underline-accent.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 12%;
+  left: 0px;
+  bottom: -65%; }
 
 .common__title--darki {
   color: #f5f5f5; }
+  .common__title--darki::before {
+    background-image: url("/img/underline-darki.svg");
+    background-position-x: 95%; }
 
 .menu {
   list-style: none;
@@ -883,7 +895,7 @@ body {
       grid-template-rows: 85px 85px 85px;
       grid-column-gap: 5%;
       grid-row-gap: 10px;
-      grid-template-areas: "th th th" "th th th" " . one  ."; }
+      grid-template-areas: "th th th" "th th th" " . one  ."; }
     .partners__slide {
       justify-self: center;
       align-self: center;
@@ -907,7 +919,7 @@ body {
       grid-template-rows: 85px 85px 85px;
       grid-column-gap: 8%;
       grid-row-gap: 10px;
-      grid-template-areas: "th th th" "th th th" " . one  ."; }
+      grid-template-areas: "th th th" "th th th" " . one  ."; }
     .partners__slide {
       justify-self: center;
       align-self: center;

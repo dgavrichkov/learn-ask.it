@@ -9,6 +9,7 @@ body{
 .common__title{
   color: $accent;
   font-size: 30px;
+  justify-self: center;
   @media(min-width: 1541px){
     font-size: 50px;
   }
@@ -23,14 +24,28 @@ body{
   letter-spacing: 10px;
   text-align: center;
   position: relative;
-  &::before{
-    content: '';
-    position: absolute;
-  }
+}
+.common__title::before{
+  content: '';
+  position: absolute;
+  background-image: url('/img/underline-accent.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 12%;
+  // width: 120px;
+  // height: 20px;
+  left: 0px;
+  bottom: -65%;
 }
 .common__title--darki{
   color: $text--light;
+  &::before{
+    background-image: url('/img/underline-darki.svg');
+    background-position-x: 95%;
+  }
 }
+
 @media (max-width: 750px){
 
 }
