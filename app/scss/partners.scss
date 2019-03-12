@@ -90,9 +90,7 @@
 }
 @media(min-width: 1541px){
   .partners{
-    // min-height: 450px;
-    grid-template-rows: 100px 240px;
-    // padding-bottom: 40px;
+    grid-template-rows: 130px 240px;
     &__title{
       grid-column: 1 / 13;
       grid-row: 1 / 2;

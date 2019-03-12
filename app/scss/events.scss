@@ -185,7 +185,7 @@
       align-items: center;
     }
     &__card{
-      box-shadow: 0 0 20px 0  px gray;
+      box-shadow: 0 0 20px 0px gray;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -306,12 +306,12 @@
 
 @media(min-width: 1541px){
   .events{
-    padding-bottom: 65px;
+    grid-template-rows: 130px auto;
+    padding-bottom: 50px;
     h2{
       grid-column: 1 / 13;
       justify-self: center;
-      margin-top: 80px;
-      margin-bottom: 60px;
+      align-self: center;
     }
     &__list{
       grid-column: 1 / 13;

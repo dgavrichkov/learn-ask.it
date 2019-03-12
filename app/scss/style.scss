@@ -1,5 +1,6 @@
 @import 'variables.scss';
 @import 'container.scss';
+@import 'common.scss';
 @import 'menu.scss';
 @import 'user.scss';
 @import 'top.scss';
@@ -16,34 +17,3 @@
 @import 'subscribe.scss';
 @import 'container.scss';
 @import 'burger.scss';
-
-body{
-  padding: 0;
-  margin: 0;
-}
-.common--hidden{
-  display: none;
-}
-.common__title{
-  color: $accent;
-  font-size: 30px;
-  @media(min-width: 1541px){
-    font-size: 54px;
-  }
-  @media(min-width: 751px){
-    font-size: 44px;
-  }
-  @media(max-width: 750px){
-    font-size: 36px;
-  }
-  line-height: 30px;
-  font-family: 'LatoLight', Arial, Helvetica, sans-serif;
-  letter-spacing: 10px;
-  text-align: center;
-}
-.common__title--darki{
-  color: $text--light;
-}
-@media (max-width: 750px){
-
-}

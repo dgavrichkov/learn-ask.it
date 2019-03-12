@@ -132,16 +132,19 @@
 }
 @media(min-width: 1541px){
   .features{
-    padding-top: 100px;
-    padding-bottom: 130px;
+    // padding-top: 80px;
+    padding-bottom: 50px;
+    grid-template-rows: 130px auto;
     &__title{
       grid-column: 1 / 13;
+      grid-row: 1 / 2;
       justify-self: center;
-      margin-bottom: 40px;
+      align-self: center;
     }
     &__list{
+      margin: 0;
       grid-column: 3 / 11;
-
+      grid-row: 2 / 3;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;

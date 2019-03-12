@@ -103,9 +103,14 @@
 }
 @media(min-width: 1541px){
   .instruction{
-    padding: 50px 0;
+    // padding: 50px 0;
+    grid-template-rows: 130px auto;
+    padding-bottom: 50px;
+    &__title{
+      align-self: center;
+    }
     &__list{
-      margin-top: 50px;
+      margin: 0;
       grid-column: 2 / 12;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;  
