@@ -58,7 +58,7 @@
 
 @media (max-width: 750px){
   .header{
-    background-image: url('/img/header.jpg');
+    background-image: url('../img/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 453px;
@@ -130,7 +130,7 @@
 @media(min-width: 751px) and (max-width: 1539px){
   .header{
     align-content: start;
-    background-image: url('/img/header.jpg');
+    background-image: url('../img/header.jpg');
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,8 +172,8 @@
 @media(min-width: 1540px){
   .header{
     background-image: 
-      url('/img/iPhone6.png'), 
-      url('/img/header.jpg');
+      url('../img/iPhone6.png'), 
+      url('../img/header.jpg');
     background-repeat: no-repeat, no-repeat;
     background-size: 490px auto, cover;
     background-position: 96% 180px, left top;
